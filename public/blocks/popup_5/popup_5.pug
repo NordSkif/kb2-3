@@ -1,0 +1,11 @@
+.popup5.popup.swiper-no-swiping(
+v-bind:class="{ 'popup_active': this.modals.popup5.active}"
+)
+	.container
+		.row.row__4x.longSlider
+			.longSlider__container.swiper-no-swiping
+				img(src="./img/objects/pop5.jpg")
+
+	.popup-top-arrow(
+	v-on:click="closeModal('popup5', false)"
+	)

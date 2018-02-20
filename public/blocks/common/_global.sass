@@ -1,0 +1,255 @@
+*,
+*:before,
+*:after
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    -webkit-user-select: none
+    user-select: none
+    cursor: default !important
+*:focus
+    background: transparent
+html
+    height: 100%
+    min-height: 100%
+    position: relative
+    margin: 0
+    padding: 0
+body
+    margin: 0
+    padding: 0
+    position: relative
+    width: 100%
+
+    height: 1080px
+    overflow: hidden
+    *::selection
+        background-color: transparent
+        color: transparent
+
+.swiper-slide
+    background-image: url('../img/bgs/fon1.png') !important
+
+.popup-glow
+    width: 1839px
+    height: 242px
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: cover
+    background-image: url('../img/objects/popup-glow.png')
+    z-index: -1
+    position: absolute
+    left: 20px
+    top: -60px
+.light_grid-popup
+    background-image: url('../img/bgs/light-grid.png')
+    background-position: 2px -7px
+    background-repeat: no-repeat
+    background-size: auto auto
+// grid lines
+.bg-crosses
+    width: 100%
+    height: 100vh
+    background: url("../img/bgs/bg-grid-crosses.png") 0 117px no-repeat
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+.bg-lines
+    width: 100%
+    height: 100vh
+    background: url("../img/bgs/bg-grid-lines.png") 0 117px no-repeat
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -2
+
+.swiper-container
+    width: 1920px
+    height: 1080px
+
+#firstBackground
+    background-image: url("../img/bgs/bg-main.jpg")
+    background-position: 0 0
+    background-size: cover
+    transition: opacity 1s ease
+    opacity: 1
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100vh
+
+#lastBackground
+    background-image: url("../img/bgs/fon1.png")
+    background-position: 0 0
+    background-size: auto auto
+    background-repeat: no-repeat
+    transition: opacity 1s ease
+    opacity: 0
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height:  100vh
+
+//wrapper
+.wrapper
+    width: 100%
+    height: 100vh
+    position: relative
+    padding: 124px 0 0 0
+
+// slide container
+.container
+    width: 100%
+    height: 100vh
+    padding: 0 60px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+
+//sidebar wrapper
+.sidebar-wrapper
+    position: absolute
+    width: 100%
+    height: 100vh
+    left: 0
+    top: 0
+    z-index: 3
+    opacity: 0
+    visibility: hidden
+    transition: 1s ease 0s
+    .sidebar__block-with-scroll
+        position: relative
+        width: 400px
+        height: 779px
+        overflow: auto
+        margin-top: 62px
+        margin-bottom: 58px
+
+//sidebar container
+.sidebar-container
+    width: 100%
+    max-width: 512px
+    padding: 124px 61px 0 50px
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    position: absolute
+    top: 0
+    background: url("../img/bgs/bg-grid.png") -59px 117px no-repeat
+    background-color: $color-black-2
+    right: 0
+    will-change: transform
+    z-index: 3
+    transform: translate3d(100%, 0, 0)
+    transition: all 0.5s ease
+    &_active &
+        transform: translate3d(0, 0, 0)
+        transition: all 0.5s ease
+    &_active
+        opacity: 1
+        visibility: visible
+
+.sidebar-close-container
+    width: calc(100% - 512px)
+    height: 100vh
+    position: absolute
+    top: 0
+    left: 0
+
+// sidebar/popup close
+
+.sidebar-close, .popup-close, .close, .gallery-close
+    @extend .icon-close
+    visibility: hidden
+    opacity: 0
+    position: fixed
+    right: 0
+    top: 0
+    cursor: pointer
+    transition: all 0.1s ease
+    z-index: 5
+    &_active
+        opacity: 1
+        visibility: visible
+        transition: 0.4s all 0.5s ease
+
+// popup
+
+.popup
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100vh
+    z-index: 3
+    transform: translate3d(0, 100%, 0)
+    background: url("../img/bgs/bg-grid.png") 0 -8px no-repeat
+    background-color: $color-black-2
+    border-top: 1px $color-blue solid
+    transition: all 0.5s ease
+    visibility: hidden
+    &_active
+        visibility: visible
+        will-change: transform
+        transform: translate3d(0, 114px, 0)
+
+.gallery
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100vh
+    z-index: 3
+    transform: translate3d(100%, 0, 0)
+    background: url("../img/bgs/bg-grid.png") 0 -8px no-repeat
+    background-color: $color-black-2
+    border-top: 1px $color-blue solid
+    transition: all 0.5s ease
+    visibility: hidden
+    &_active
+        visibility: visible
+        will-change: transform
+        transform: translate3d(0, 0, 0)
+
+.popup-top-arrow
+    @extend .icon-popup-top-arrow
+    position: absolute
+    top: 10px
+    left: 933px
+    z-index: 10
+
+.hand__block
+    @extend .icon-hand
+    position: absolute
+    left: 902px
+    top: 1018px
+
+.hand-to-right__block
+    @extend .icon-hand-to-right
+    position: absolute
+    left: 946px
+    top: 1018px
+
+.hand-to-left__block
+    @extend .icon-hand-to-left
+    position: absolute
+    left: 903px
+    top: 1018px
+
+.blue-background
+    display: block
+    background: url("../img/bgs/bler-23.png") 0 0 no-repeat
+    background-size: contain
+    width: 746px
+    height: 746px
+    position: absolute
+    left: 0
+    top: 30px
+    z-index: -1

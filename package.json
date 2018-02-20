@@ -1,0 +1,24 @@
+{
+    "name": "app-project",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-contrib-pug": "1.0.0",
+        "grunt-autoprefixer": "latest",
+        "grunt-browserify": "latest",
+        "grunt-contrib-concat": "latest",
+        "grunt-contrib-connect": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-sass": "latest",
+        "grunt-contrib-cssmin": "latest",
+        "grunt-contrib-uglify": "latest",
+        "jit-grunt": "latest",
+        "load-grunt-config": "latest",
+        "breakpoint-sass": "latest",
+        "time-grunt": "latest"
+    },
+    "dependencies": {
+        "swiper": "^4.0.7"
+    }
+}

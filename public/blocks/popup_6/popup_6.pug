@@ -1,0 +1,12 @@
+.popup6.popup.swiper-no-swiping(
+	v-bind:class="{ 'popup_active': this.modals.popup6.active}"
+)
+	.container
+		.column.column__1x
+			.row.row__1x
+
+		.column.column__3x
+
+		.popup-top-arrow(
+			v-on:click="closeModal('popup6', false)"
+		)

@@ -1,0 +1,159 @@
+.link
+    font-family: $font-geometria
+    font-size: 24px
+    font-weight: bold
+    line-height: 1.42
+    color: $color-white-2
+    position: relative
+    cursor: pointer
+    &__arrow-right
+        &:after
+            @extend .icon-arrow-right
+            content: ''
+            position: absolute
+            left: 324px
+            top: 50%
+            transform: translate(0, -50%)
+
+.video-link
+    font-family: $font-geometria
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.62
+    color: $color-white
+    position: relative
+    padding-left: 44px
+    &:after
+        @extend .icon-arrow-bottom-blue-oval
+        content: ''
+        position: absolute
+        left: 240.5px
+        top: 50%
+        transform: translate(0, -50%)
+    &:before
+        @extend .icon-camcorder
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(0, -50%)
+
+
+.help-link
+    @extend .text
+    position: relative
+    &__right
+        &:after
+            @extend .icon-arrow-right-oval
+            content: ''
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translate(0, -50%)
+    &__bottom
+        &:after
+            @extend .icon-arrow-bottom-oval
+            content: ''
+            position: absolute
+            top: 50%
+            right: 18px
+            transform: translate(0, -50%)
+.subtitle
+    font-family: $font-geometria
+    font-size: 24px
+    font-weight: bold
+    line-height: 1.42
+    color: $color-white-2
+
+.title
+    font-family: $font-geometria
+    font-size: 24px
+    font-weight: bold
+    line-height: 1.42
+    color: $color-white-2
+    margin: 60px 0 38px
+
+
+.big_title
+    font-family: $font-roboto
+    color: $color-white-2
+    font-size: 70px
+    font-weight: 100
+    letter-spacing: -2px
+
+.super_big_title
+    color: $color-white-2
+    font-family: $font-roboto
+    font-size: 110px
+    font-weight: 100
+    letter-spacing: -2px
+
+.text
+    font-family: $font-geometria
+    font-size: 16px
+    line-height: 1.69
+    font-weight: 400
+    color: $color-white-3
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    &__dark-grey
+        color: $color-gray
+    &__desc1
+        color: $color-white-2
+
+.text_dark
+    font-family: $font-roboto
+    font-size: 20px
+    line-height: 24px
+    color: $color-gray
+    font-weight: 400
+
+.rotate
+    @extend .icon-rotate
+    position: absolute
+    left: 23.5px
+    top: 430px
+
+.title_blue
+    font-family: $font-geometria
+    font-size: 30px
+    line-height: 1.33
+    text-transform: uppercase
+    color: $color-blue
+
+.title_blue_small, td.title_blue_small, th.title_blue_small
+    font-family: $font-geometria
+    font-size: 14px
+    line-height: 1.71
+    font-weight: 400
+    color: $color-blue-2
+    text-transform: uppercase
+
+.title__sidebar
+    margin-bottom: 60px
+.item__sidebar
+    @include widthFix(340px)
+    align-items: flex-start
+    flex-wrap: wrap
+    margin-top: 60px
+    &:first-child
+        margin-top: 0 !important
+    .text_dark
+        margin: 0 0 20px 0
+
+.touch__btn
+    color: $color-white-2
+    padding-left: 45px
+    font-size: 14px
+    font-weight: 400
+    font-family: $font-geometria
+    position: absolute
+    &:before
+        content: ''
+        @extend .icon-touch
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translate(0, -50%)

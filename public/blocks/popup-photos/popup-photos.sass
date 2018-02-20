@@ -1,0 +1,39 @@
+.popup-photos
+    visibility: hidden
+    opacity: 0
+    position: absolute
+    left: 0
+    top: -1080px
+    width: 1920px
+    height: 1080px
+    background-image: none !important //url("../img/bgs/bg-grid.png") 0 -8px no-repeat
+    background-color: $color-black-2
+    border-top: none !important //1px $color-blue solid
+    transition: opacity 1s ease-in
+    &_active
+        visibility: visible
+        opacity: 1
+        transition: opacity 0.5s ease-in
+
+    .container
+        width: 100%
+        height: 100vh
+        padding: 0 60px
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+
+    .popup-photo
+        width: 100%
+        height: 100%
+        box-sizing: border-box
+        padding: 50px 0
+        margin: 0 auto
+        align-items: center
+        display: flex
+
+
+    .popup_img
+        margin: auto
+        width: auto
+        height: 100%

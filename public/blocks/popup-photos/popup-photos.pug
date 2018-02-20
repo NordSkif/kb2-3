@@ -1,0 +1,8 @@
+.popup-photos.popup.swiper-no-swiping(
+	v-bind:class="{ 'popup-photos_active': isActiveImg }"
+	v-on:click="photoClose"
+)
+	.container
+		.column.column__4x
+			.popup-photo
+

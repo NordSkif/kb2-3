@@ -1,0 +1,18 @@
+.popup1.popup.swiper-no-swiping(
+	v-bind:class="{ 'popup_active': this.modals.popup1.active}"
+)
+	.container
+		.column.column__1x
+			.row.row__1x
+			.row.row__1x
+			.row.row__1x
+			.row.row__1x( v-on:click="showModal('popupVideo1')" )
+
+		.column.column__2x
+
+
+		.column.column__1x
+			.row.row__1x
+			.row.row__1x
+			.row.row__1x
+			.row.row__1x( v-on:click="showModal('popupVideo2')" )

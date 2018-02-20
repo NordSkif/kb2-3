@@ -1,0 +1,61 @@
+.popup1
+    border-top: none
+    &:after
+        content: ''
+        @extend .popup-glow
+    .container
+        background: #fff
+        background-image: url("../img/bgs/bg-pop-3.jpg") !important
+        background-repeat: no-repeat
+        z-index: 999999999999999999
+    .subtitle
+        margin: 59px 0 30px 0
+    .text
+        margin-bottom: 55px
+        @include widthFix(350px)
+        align-items: flex-start
+
+    &__photo
+        margin-bottom: 20px
+        width: 303px
+        height: 206px
+        position: relative
+        &:after
+            @include img_blur
+            width: 303px
+            height: 206px
+            background-image: url("../img/objects/popup1-ph.png")
+
+    .help-link__right
+        @include widthFix(300px)
+        align-items: flex-start
+        margin-top: 0
+
+        &_modified
+            margin-top: 39px
+
+    .text__dark-grey
+        @include widthFix(271px)
+        margin-bottom: 60px
+        align-items: flex-start
+        &_modified
+            margin-bottom: 0
+
+    .big_title
+        margin-top: 109px
+        &-modified1
+            margin-top: 48px
+        
+    &__scheme
+        background-image: url("../img/objects/buran-scheme.png")
+        width: 683px
+        height: 833px
+        position: absolute
+        top: 59px
+        left: 107px
+        background-size: cover
+        overflow: visible
+    .touch__btn
+        top: 436px
+        width: 120px
+

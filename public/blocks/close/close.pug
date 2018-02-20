@@ -1,0 +1,59 @@
+// POPUPS
+.popup1-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup1.active }"
+    v-on:click="closeModal('popup1', false)"
+)
+.popup2-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup2.active}"
+    v-on:click="closeModal('popup2', false)"
+)
+.popup3-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup3.active}"
+    v-on:click="closeModal('popup3', false)"
+)
+.popup4-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup4.active}"
+    v-on:click="closeModal('popup4', false)"
+)
+.popup5-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup5.active}"
+    v-on:click="closeModal('popup5', false)"
+)
+.popup6-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup6.active}"
+    v-on:click="closeModal('popup6', false)"
+)
+
+.popup-video1-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popupVideo1.active}"
+    v-on:click="handlerCloseVideoPopup('popupVideo1')"
+)
+.popup-video2-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popupVideo2.active}"
+    v-on:click="handlerCloseVideoPopup('popupVideo2')"
+)
+.popup3-close.popup-close(
+    v-bind:class="{ 'popup-close_active': this.modals.popup3.active}"
+    v-on:click="closeModal('popup3')"
+)
+.photo-close.popup-close(
+    v-bind:class="{ 'popup-close_active': isActiveImg }"
+    v-on:click="photoClose"
+)
+
+// SIDEBARS
+
+.sidebar1-close.sidebar-close(
+    v-bind:class="{ 'sidebar-close_active': this.modals.sidebar1.active }"
+    v-on:click="closeModal('sidebar1', false)"
+)
+
+.sidebar2-close.sidebar-close(
+    v-bind:class="{ 'sidebar-close_active': this.modals.sidebar2.active }"
+    v-on:click="closeModal('sidebar2', false)"
+)
+
+.gallery-close.sidebar-close(
+    v-bind:class="{ 'gallery-close_active': this.modals.gallery.active }"
+    v-on:click="closeModal('gallery')"
+)

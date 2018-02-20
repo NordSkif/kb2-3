@@ -1,0 +1,29 @@
+.popup2.popup.swiper-no-swiping(
+v-bind:class="{ 'popup_active': this.modals.popup2.active}"
+)
+	.container
+		img.planet-2(src="./img/objects/planet-2.png")
+		.column.column__1x
+			.row.row__1x
+				.subtitle.fix1 Космические аппараты «Метеор-М» № 1, 2
+			.row.row__1x
+				.text.fix1 Серия космических аппаратов «Метеор-М» собирает информацию о погодных изменениях, состоянии озонового слоя, радиационной обстановке, морской поверхности и ледяного покрова. Создана по заданию Роскосмоса и Росгидромета на НПП ВНИИЭМ.
+			.row.row__2x.enableWrap.flex-column.fix1
+				.text Масса, кг
+				.extra_big_title.extra_big_title-blue 2700
+				.text Высота, км
+				.extra_big_title.extra_big_title-blue 832
+				.text Период обращения вокруг Земли
+				.extra_big_title.extra_big_title-blue 1-3 суток
+		.column.column__2x
+		.column.column__1x
+			.row.row__3x.enableWrap.flex-column.fix1
+				.text
+					b Запуски:
+				.text КА «Метеор-М» №1 — 17 сентября 2009 года.
+				.text КА «Метеор-М» №2 — 8 июля 2014 года.
+			.row.row__1x
+				.link.fix1( v-on:click="showModal('sidebar4')" )
+					.subtitle Где используют?
+					.ico.ico__arr-right.ico_bg_blue
+		.popup-top-arrow( v-on:click="closeModal('popup2', false)" )

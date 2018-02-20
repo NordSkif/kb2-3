@@ -1,0 +1,22 @@
+.sidebar1.sidebar-wrapper.swiper-no-swiping(
+    v-bind:class="{ 'sidebar-container_active':  this.modals.sidebar1.active}"
+)
+    .sidebar-close-container(v-on:click="closeModal('sidebar1')")
+    .sidebar-container
+        .sidebar__block-with-scroll
+            .title &laquo;Буран&raquo; предназначался для:
+            .item
+                .text_dark 01
+                .text Выведения на орбиты космических аппаратов, космонавтов и грузов, обслуживания кораблей и возвращения их на Землю;
+            .item
+                .text_dark 02
+                .text Проведения военных и научных исследований и экспериментов;
+            .item
+                .text_dark 03
+                .text Решения научных и оборонных задач.
+
+            .sidebar1__photo
+                img(
+                    src="img/objects/buran1-sidebar2-photo.png"
+                    v-on:click.self='photoOpen($event)'
+                )

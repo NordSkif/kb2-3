@@ -1,0 +1,22 @@
+.popup-video.swiper-no-swiping(
+v-bind:class="{ 'popup-video_active': this.modals.popupVideo2.active }"
+)
+    .popup-video__video-pleer-box(
+    v-bind:class="{ 'popup-video__video-pleer-box_active': this.modals.popupVideo2.play }"
+    )
+        .popup-video__video-pleer-btn.popup-video__video-pleer-btn_play(
+        v-on:click="playVideoFile('popupVideo2')"
+        )
+        .popup-video__video-pleer-btn.popup-video__video-pleer-btn_pause(
+        v-on:click="pauseVideoFile('popupVideo2')"
+        )
+        .popup-video__progress
+            .popup-video__progress-inner
+    video.popup-video__video-pleer-file(
+        muted
+        v-bind="{id: this.modals.popupVideo2.id}"
+    )
+        source(
+            src="video/gagarin.mp4"
+            type="video/mp4"
+        )

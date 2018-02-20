@@ -1,0 +1,25 @@
+.swap-touch-select
+.main.wrapper
+    .container
+        .column.column__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x(
+            data-swiper-parallax="-100"
+            v-on:click="goToSlide($event,1, 2000)"
+            )
+        .column.column__1x
+            .row.row__4x
+
+        .column.column__1x
+            .row.row__4x
+
+        .column.column__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x(
+            data-swiper-parallax="-100"
+            v-on:click="showModal('sidebar1')"
+            )

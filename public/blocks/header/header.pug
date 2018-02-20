@@ -1,0 +1,15 @@
+// здесь перечисляем переменные попапов, на которых необходимо скрыть хедер
+.header(
+    v-bind:class="{'header_hidden': this.modals.popupVideo1.active || isActiveImg || this.modals.popupVideo2.active }"
+)
+
+    .header__container
+        .header__text Гвианский космический центр
+        .header__pagination
+            .swiper-pagination
+
+        .header__lang(
+            v-bind:class="[{'header__lang_move-right': isActiveImg || this.modals.popup1.active || this.modals.popup2.active || this.modals.popup3.active || this.modals.popup4.active || this.modals.popup5.active || this.modals.popup6.active || this.modals.sidebar1.active || this.modals.sidebar2.active || this.modals.gallery.active}]"
+        )
+            .header__lang-text.header__lang-text_active Ru
+            .header__lang-text En

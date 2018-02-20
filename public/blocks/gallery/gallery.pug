@@ -1,0 +1,9 @@
+.gallery.swiper-no-swiping(
+	v-bind:class="{ 'gallery_active': this.modals.gallery.active}"
+)
+	.container
+		.swiper-container.swiper-container-gallery(
+                v-bind="gallerySwipeInit"
+            )
+			.swiper-wrapper
+				.swiper-slide

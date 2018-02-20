@@ -1,0 +1,122 @@
+.swap-touch-select
+    background-image: url('../img/objects/touch-2.png')
+    width: 68px
+    height: 47px
+    display: inline-block
+    z-index: 1
+    opacity: 1
+    position: absolute
+    left: 1360px
+    top: 45px
+    align-items: center
+
+.row2fix
+    padding-bottom: 100px
+
+.page2.wrapper
+    background-image: url("../img/bgs/page2.png") !important
+
+.page2
+    .link__arrow-right:after
+        left: 224px
+
+    .bg-lines
+        background-image: url('../img/bgs/light_lines.png')
+        z-index: 1
+        opacity: 1
+    .title
+        margin: 50px 0 100px 0
+        font-size: 30px
+        display: block
+        color: #fff
+        font-weight: 700
+        min-height: 35px
+        min-width: 30px
+        font-family: $font-geometria
+
+    .subtitle
+        margin: 0 0 45px 0
+        color: #000
+        font-size: 22px;
+        font-weight: 700
+        margin-bottom: 40px
+        @include widthFix(288px)
+
+    .text_white
+        font-weight: 400
+        color: #717980
+        font-size: 16px
+        font-family: $font-roboto
+
+    .dubl
+        margin: 5px 0 45px 0
+
+    .text
+        @include widthFix(392px)
+        color: #fff
+        font-weight: 300
+
+    .text__dark-grey
+        @include widthFix(240px)
+        margin-top: 9px
+        &_modified
+            @include widthFix(180px)
+            margin-top: 45px
+
+    .title_blue_small
+        margin-top: 21px
+        margin-bottom: 10px
+
+    &__photo
+        margin-top: 45px
+        width: 142px //142 × 193
+        height: 193px
+        position: relative
+        float: left
+        //background-image: url("../img/objects/n1-lz.png")
+        margin-right: 15px
+        .text
+            display: inline-block
+
+        &:after
+            @include img_blur
+            width: 142px
+            height: 193px
+            background-image: url("../img/objects/glushko.png")
+
+
+    .help-link
+        width: 332px
+        align-items: flex-start
+        &__right
+            &_modified
+                margin-top: 165px
+                margin-bottom: 34px
+                width: 332px
+        &__bottom
+            &_modified1
+                margin-top: 75px
+                margin-bottom: 0
+            &_modified2
+                margin-top: 111px
+                margin-bottom: 110px
+
+    .video-link
+        width: 200px
+        &:after
+            left: 272px
+
+    .row_modified
+        flex-direction: column
+        flex-wrap: nowrap
+    &__photo2
+        background-image: url("../img/objects/bor4-ph2.png")
+        margin-top: 154px
+        margin-bottom: 61px
+        width: 340px
+        height: 256.1px
+        background-size: cover
+        display: block
+
+
+        

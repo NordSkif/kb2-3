@@ -1,0 +1,78 @@
+.popup-video
+    @include popup
+    z-index: 100
+    &_active
+        will-change: transform
+        transform: translate3d(0, -1px, 0)
+    &__video
+        position: fixed
+        left: 0
+        top: 0
+        width: 100%
+        height: 100vh
+        z-index: -100
+    &__video-pleer-box
+        background-position: 0 25px
+        position: fixed
+        z-index: 100
+        left: 50%
+        bottom: 0
+        transform: translate3d(-50%, 0, 0)
+    &__progress
+        display: block
+        position: fixed
+        left: 50%
+        bottom: 0
+        z-index: -1
+        transform: translate3d(-50%, 0, 0)
+        overflow: hidden
+        @extend .icon-curve-first
+    &__progress-inner
+            position: relative
+            width: 0
+            height: 210px
+            overflow: hidden
+            .popup-video-flight__progress_active &
+                width: 1134px
+                transition: all 230s ease
+            &:after
+                content: ''
+                @extend .icon-curve-second
+                //position: relative
+                position: absolute
+                left: 0
+                top: auto
+    &__video-pleer-title
+        font-family: $font-geometria
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.69
+        color: $color-gray
+        margin: 0 0 19px
+    &__video-pleer-btn
+        @extend .icon-play
+        margin: 0 0 60px
+        &_play
+            visibility: visible
+            opacity: 1
+            display: block
+            .popup-video__video-pleer-box_active &
+                visibility: hidden
+                opacity: 0
+                display: none
+        &_pause
+            @extend .icon-pause
+            visibility: hidden
+            opacity: 0
+            display: none
+            .popup-video__video-pleer-box_active &
+                visibility: visible
+                opacity: 1
+                display: block
+    &__video-pleer-file
+        width: 100%
+        height: 100vh
+        position: fixed
+        left: 0
+        top: 0
+        z-index: -3

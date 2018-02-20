@@ -1,0 +1,32 @@
+.swap-touch-select
+.page1.wrapper.slide-light
+    .container
+        .column.column__1x
+            .row.row__1x
+            .row.row__1x(
+            data-swiper-parallax="-100"
+            v-on:click="goToSlide($event,2, 2000)"
+            )
+            .row.row__1x(
+            data-swiper-parallax="-100"
+            v-on:click="goToSlide($event,3, 2000)"
+            )
+            .row.row__1x(
+            data-swiper-parallax="-100"
+            v-on:click="goToSlide($event,4, 2000)"
+            )
+        .column.column__1x
+            .row.row__4x
+
+        .column.column__1x
+            .row.row__4x
+
+        .column.column__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x
+            .row.row__1x(
+            data-swiper-parallax="-100"
+            v-on:click="goToSlide($event,4, 2000)"
+            )
+

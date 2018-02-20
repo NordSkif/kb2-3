@@ -1,0 +1,103 @@
+.swap-touch-select
+    background-image: url('../img/objects/touch-2.png') !important
+    width: 68px
+    height: 47px
+    display: inline-block
+    z-index: 1
+    opacity: 1
+    position: absolute
+    left: 1360px
+    top: 45px
+    align-items: center
+
+.page1.wrapper
+    background-image: url("../img/bgs/page1.png") !important
+
+.page1
+    .bg-lines
+        background-image: url('../img/bgs/light_lines.png')
+        z-index: 1
+        opacity: 1
+
+    .title
+        font-family: $font-geometria
+        font-weight: 700
+        font-size: 30px
+
+    .link
+        position: relative
+        z-index: 1
+        margin-top: 70px
+        &:after
+            top: -20px
+            left: 170px
+            @extend .icon-arrow-right
+            color: #fff
+            content: ''
+            position: absolute
+            -webkit-transform: rotate(90deg); /* Chrome y Safari */
+            -moz-transform: rotate(90deg) /* Firefox */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
+            -o-transform: rotate(90deg) /* Opera */
+
+    .wrapper
+        background: #000
+        background-image: url("../img/bgs/bg-2.jpg") !important
+        background-position: bottom center
+
+    .column
+        overflow: visible
+    .subtitle
+        margin-top: 0px
+        color: #000
+        font-size: 22px;
+        font-weight: 700
+        margin-bottom: 40px
+        @include widthFix(348px)
+
+    .text_white
+        font-weight: 400
+        color: #717980
+        font-size: 16px
+        font-family: $font-roboto
+
+    .big_title
+        margin-top: 17px
+        margin-bottom: 60px
+        @include widthFix(300px)
+
+    .text
+        width: 420px
+        font-family: $font-geometria
+        color: #ffffff
+        font-size: 16px
+        line-height: 27px;
+        font-weight: 300
+        &__modified
+            margin-top: 40px
+
+
+    &__photo
+        margin-top: 45px
+        width: 173px
+        height: 227px
+        position: relative
+        &:after
+            @include img_blur
+            width: 173px
+            height: 227px
+            background-image: url("../img/objects/lozin.png")
+
+        .help-link__right
+            position: absolute
+            width: 173px
+            height: 227px
+            top: 0
+            &:after
+                left: 230px
+    .right-block.help-link__right
+        margin-top: 140px
+        align-items: flex-start
+    .right-block.help-link__bottom
+        margin-top: 140px
+        align-items: flex-start
