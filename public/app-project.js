@@ -88,6 +88,7 @@ var app = new Vue({
                     simulateTouch: true,
                     parallax: true,
                     longSwipes: true,
+                    noSwipingClass: 'swiper-no-swiping',
                     longSwipesRatio: 0.1,
                     // откл. на продакшн клавиатуру : начало
                     keyboard: true,
@@ -104,21 +105,29 @@ var app = new Vue({
                 });
             });
         },
-        gallerySwipeInit: function() {
+        galleryInit: function () {
             // Swiper init (http://idangero.us/swiper/)
-            $(function() {
-                myGallery = new Swiper('.swiper-container-gallery', {
-                    speed: 500,
-                    direction: 'horizontal',
-                    simulateTouch: true,
-                    parallax: true,
-                    longSwipes: true,
-                    longSwipesRatio: 0.1,
-                    // откл. на продакшн клавиатуру : начало
-                    keyboard: true,
-                    // откл. на продакшн клавиатуру : конец
-                    on: {}
-                });
+            $(function () {
+              myGallery = new Swiper('.gallery__swiper-container', {
+                speed: 700,
+                direction: 'horizontal',
+                simulateTouch: true,
+                parallax: true,
+                longSwipes: true,
+                longSwipesRatio: 0.1,
+                // откл. на продакшн клавиатуру : начало
+                keyboard: true,
+                // откл. на продакшн клавиатуру : конец
+                on: {},
+                pagination: {
+                  el: '.gallery__swiper-pagination',
+                  clickable: true
+                },
+                // navigation: {
+                //   nextEl: '.gallery__swiper-button-next',
+                //   prevEl: '.gallery__swiper-button-prev'
+                // }
+              });
             });
         },
         swipeIntroInit: function() {

@@ -34,7 +34,6 @@ html
             include ../blocks/header/header
             include ../blocks/popup-photos/popup-photos
             include ../blocks/background-video/background-video
-            include ../blocks/gallery/gallery
             .swiper-container.swiper-container-main(
                 v-bind="swipeInit"
             )
@@ -44,6 +43,7 @@ html
                         include ../blocks/sidebar_1/sidebar_1
                     .swiper-slide
                         include ../blocks/page1/page1
+                        include ../blocks/gallery/gallery
                     .swiper-slide
                         include ../blocks/page2/page2
                     .swiper-slide

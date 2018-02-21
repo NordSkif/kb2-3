@@ -1,20 +1,35 @@
 .sidebar1
+    z-index: 11 !important
+    &:after
+        content: ''
+        @extend .sidebar-glow
+    .sidebar-container
+        background-color: $color-white-2
+        padding: 50px 61px 0 0
+        .title
+            color: $color-black-full
+            width: 100%
+            padding-left: 50px
+            font-size: 30px
+            padding-right: 10px
+            margin: 37px 0 27px 20px
+        .text
+            color: $color-black-6
+            width: 100%
+            padding-left: 70px
+            padding-right: 10px
+            margin-bottom: 50px
+        .testsubold
+            font-weight: 500
+    .sidebar__block-with-scroll
+        width: 450px
+        height: 840px
+        margin-top: 0
+        .title:nth-child(1)
+            margin-top: 0
 
-    .title
-        margin: 0
-        @include widthFix(300px)
-    .item
-        @include widthFix(300px)
-        align-items: flex-start
-        flex-wrap: wrap
-        margin-top: 60px
-        &:first-child
-            margin-top: 0 !important
-        .text_dark
-            margin: 0 0 20px 0
-
-    &__photo
-        margin-top: 60px
-        width: 400px
-        height: 268px
-        position: relative
+.sidebar1.sidebar-container_active
+    &:after
+        content: ''
+        @extend .sidebar-glow
+        right: 390px
