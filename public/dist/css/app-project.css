@@ -717,70 +717,11 @@ body {
   justify-content: flex-start;
   align-items: flex-start; }
 
-.sidebar-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  z-index: 3;
-  opacity: 0;
-  visibility: hidden;
-  transition: 1s ease 0s; }
-  .sidebar-wrapper .sidebar__block-with-scroll {
-    position: relative;
-    width: 400px;
-    height: 779px;
-    overflow-y: auto;
-    overflow-x: visible;
-    margin-top: 62px;
-    margin-bottom: 58px; }
-    .sidebar-wrapper .sidebar__block-with-scroll img {
-      max-width: 100%;
-      width: 416px; }
-    .sidebar-wrapper .sidebar__block-with-scroll .enable-glow {
-      margin-top: 35px; }
-    .sidebar-wrapper .sidebar__block-with-scroll .enable-glow:nth-child(1) {
-      margin-top: 0; }
-
 .enable-glow {
   position: relative;
   display: inline-block; }
   .enable-glow::after {
     content: ''; }
-
-.sidebar-container {
-  width: 100%;
-  max-width: 512px;
-  padding: 124px 61px 0 50px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  top: 0;
-  background-color: #ffffff !important;
-  background-image: none;
-  color: #334053 !important;
-  right: 0;
-  will-change: transform;
-  z-index: 3;
-  transform: translate3d(100%, 0, 0);
-  transition: all 0.5s ease; }
-  .sidebar-container_active .sidebar-container {
-    transform: translate3d(0, 0, 0);
-    transition: all 0.5s ease; }
-  .sidebar-container_active {
-    opacity: 1;
-    visibility: visible; }
-
-.sidebar-close-container {
-  width: calc(100% - 512px);
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0; }
 
 .img-glow, .enable-glow::after {
   width: 100%;
@@ -793,52 +734,6 @@ body {
   position: absolute;
   bottom: -30px;
   left: 0; }
-
-.sidebar-container {
-  width: 100%;
-  max-width: 512px;
-  padding: 124px 61px 0 50px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  top: 0;
-  background: url("../img/bgs/light-grid.png") -59px 117px no-repeat;
-  background-color: #19191C;
-  right: 0;
-  will-change: transform;
-  z-index: 3;
-  transform: translate3d(100%, 0, 0);
-  transition: all 0.5s ease; }
-  .sidebar-container_active .sidebar-container {
-    transform: translate3d(0, 0, 0);
-    transition: all 0.5s ease; }
-  .sidebar-container_active {
-    opacity: 1;
-    visibility: visible; }
-
-.sidebar-close-container {
-  width: calc(100% - 512px);
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.sidebar-close, .popup-close, .close, .gallery-close {
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  transition: all 0.1s ease;
-  z-index: 5; }
-  .sidebar-close_active, .popup-close_active, .close_active, .gallery-close_active {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.4s all 0.5s ease; }
 
 .popup {
   position: absolute;
@@ -968,7 +863,8 @@ body {
   height: 100vh;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  background: rgba(18, 18, 18, 0.9); }
 
 .sidebar-close, .popup-close, .close, .gallery-close {
   visibility: hidden;

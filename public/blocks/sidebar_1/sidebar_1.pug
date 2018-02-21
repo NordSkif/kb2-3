@@ -1,7 +1,7 @@
 .sidebar1.sidebar-wrapper.swiper-no-swiping(
 v-bind:class="{ 'sidebar-container_active': this.modals.sidebar1.active }"
 )
-    .sidebar-close-container(v-on:click="closeModal('sidebar1')")
+
     .sidebar-container
         .sidebar__block-with-scroll
             .title Куру
@@ -9,3 +9,4 @@ v-bind:class="{ 'sidebar-container_active': this.modals.sidebar1.active }"
             .text.testsubold Куру – очень безопасный космодром, ведь Французская Гвиана слабо заселена, а её территория почти на 90% покрыта влажными тропическими лесами. Кроме того, страна не подвержена землетрясениям, ураганами другим разрушительным природным стихиям.
             .enable-glow
                 img(src="./img/objects/raketa.jpg")
+    .sidebar-close-container(v-on:click="closeModal('sidebar1')")
